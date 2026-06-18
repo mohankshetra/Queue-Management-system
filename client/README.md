@@ -1,18 +1,141 @@
-# React + Vite
+# Smart Queue Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Queue Management System built using the MERN Stack (MongoDB, Express.js, React.js, Node.js) with JWT Authentication, Role-Based Access Control, Socket.io Real-Time Updates, Analytics Dashboard, and Queue Monitoring.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+The Smart Queue Management System helps organizations such as hospitals, banks, service centers, and government offices manage customer queues efficiently.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Users can generate digital tokens, track queue status in real time, and receive notifications. Staff members can call and complete tokens, while administrators can monitor analytics and manage counters.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### User Features
+
+- User Registration & Login
+- JWT Authentication
+- Generate Queue Token
+- View Queue Status
+- Real-Time Updates
+- Notification Panel
+- Token History
+
+### Staff Features
+
+- Staff Login
+- Call Next Token
+- Complete Token
+- View Queue Status
+- Manage Counter Operations
+
+### Admin Features
+
+- Dashboard Analytics
+- Manage Users
+- Manage Counters
+- Queue Monitoring
+- Reports & Statistics
+- System Management
+
+### Real-Time Features
+
+- Socket.io Integration
+- Live Queue Updates
+- Instant Token Status Changes
+- Notification Broadcasting
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+- React.js
+- Vite
+- React Router DOM
+- Redux Toolkit
+- Tailwind CSS
+- Axios
+- Socket.io Client
+- Chart.js
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcryptjs
+- Socket.io
+
+### Database
+
+- MongoDB
+
+### Tools
+
+- VS Code
+- Git
+- GitHub
+- Postman
+- MongoDB Compass
+
+---
+
+## 📂 Project Structure
+
+```text
+smart-queue-management-system/
+
+├── client/
+│
+│   ├── src/
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── TokenCard.jsx
+│   │   ├── QueueTable.jsx
+│   │   ├── StatsCard.jsx
+│   │   ├── NotificationPanel.jsx
+│   │   ├── CounterTable.jsx
+│   │   ├── UserTable.jsx
+│   │   └── TokenManagement.jsx
+│   │
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── UserDashboard.jsx
+│   │   ├── StaffDashboard.jsx
+│   │   ├── AdminDashboard.jsx
+│   │   ├── Analytics.jsx
+│   │   └── Reports.jsx
+│   │
+│   ├── redux/
+│   ├── services/
+│   ├── socket.js
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── server/
+│
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── sockets/
+│   │
+│   ├── server.js
+│   └── .env
+│
+└── README.md
+
+
